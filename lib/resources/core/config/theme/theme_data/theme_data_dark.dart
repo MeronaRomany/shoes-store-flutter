@@ -4,6 +4,12 @@ import '../app_color.dart';
 
 ThemeData getDarkTheme() {
   return ThemeData(
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.grey900,
+        iconTheme: IconThemeData(
+        color: AppColors.grey900, // لون الأيقونات
+      ),
+    ),
     scaffoldBackgroundColor: AppColors.grey900,
     brightness: Brightness.dark,
     colorScheme: ColorScheme.fromSeed(
@@ -54,5 +60,6 @@ ThemeData getDarkTheme() {
       filled: true,
     ),
     cardColor: Colors.white,
+    
   );
 }

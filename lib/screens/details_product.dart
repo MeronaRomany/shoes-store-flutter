@@ -18,7 +18,7 @@ class DetailsProduct extends StatelessWidget {
     return Scaffold(
       // backgroundColor: Color(0xfff8f9fa),
      appBar: AppBar(
-       backgroundColor: Color(0xfff8f9fa),
+      //  backgroundColor: Color(0xfff8f9fa),
        title: Text("Men\'s shoes",style: TextStyle(fontWeight: FontWeight.bold),),
        centerTitle: true,
        leading:

@@ -54,6 +54,7 @@ void main() async{
 class MyApp extends StatelessWidget {
   final bool seenOnboarding;
 
+
   MyApp({super.key,required this.seenOnboarding});
 
   // This widget is the root of your application.

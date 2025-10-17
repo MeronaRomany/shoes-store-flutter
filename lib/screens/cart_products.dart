@@ -1,6 +1,7 @@
 import 'package:cart_stepper/cart_stepper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shoes/resources/core/config/theme/app_color.dart';
 
 import '../cubit/cubit_cart_products.dart';
 import '../cubit/cubit_prodect.dart';
@@ -15,7 +16,7 @@ class CartProducts extends StatelessWidget {
     // final product = ModalRoute.of<ProductsCubit>(context)?.settings.arguments ;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
@@ -56,7 +57,9 @@ class CartProducts extends StatelessWidget {
                           padding: EdgeInsets.all(5),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Colors.white,
+                            color:Theme.of(context).brightness==Brightness.light?
+                             Colors.white:
+                             AppColors.grey900,
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black.withAlpha(40),
@@ -208,7 +211,7 @@ class CartProducts extends StatelessWidget {
           ),
 
 
-          // Padding(
+         
           //   padding: const EdgeInsets.all(8.0),
           //   child: Container(
           //     child: Column(

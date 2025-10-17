@@ -4,6 +4,12 @@ import '../app_color.dart';
 
 ThemeData getLightTheme(){
   return ThemeData(
+    appBarTheme:AppBarTheme(
+      backgroundColor: Color(0xfff8f9fa),
+      iconTheme: IconThemeData(
+        color: Color(0xfff8f9fa) // لون الأيقونات
+      ),
+    ),
     scaffoldBackgroundColor:Color(0xfff8f9fa),
     brightness: Brightness.light,
     colorScheme: ColorScheme.fromSeed(
