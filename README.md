@@ -2,12 +2,8 @@
 
 A cross-platform Flutter e-commerce app for shoes. Products are loaded from a REST API, with Firebase authentication, a shopping cart, and a Light/Dark theme.
 
-## Screenshots
-
-| Onboarding | Home | Cart | Dark Mode |
-|------------|------|------|-----------|
-| ![Onboarding](docs/screenshots/onboarding.png) | ![Home](docs/screenshots/home.png) | ![Cart](docs/screenshots/cart.png) | ![Dark](docs/screenshots/dark.png) |
-
+Screenshots
+<table> <tr> <td align="center"><b>[Screen 1 name]</b></td> <td align="center"><b>[Screen 2 name]</b></td> <td align="center"><b>[Screen 3 name]</b></td> </tr> <tr> <td><img src="doc/shotscreens/photo_2026-05-18_13-35-19.jpg" width="220"></td> <td><img src="doc/shotscreens/photo_2026-05-18_13-35-25.jpg" width="220"></td> <td><img src="doc/shotscreens/photo_2026-09-25_00-07-16.jpg" width="220"></td> </tr> <tr> <td align="center"><b>[Screen 4 name]</b></td> <td align="center"><b>[Screen 5 name]</b></td> <td></td> </tr> <tr> <td><img src="doc/shotscreens/photo_2026-09-25_00-07-54.jpg" width="220"></td> <td><img src="doc/shotscreens/photo_2026-09-25_00-08-01.jpg" width="220"></td> <td></td> </tr> </table>
 ## Features
 
 - Onboarding screens shown only on the first launch
