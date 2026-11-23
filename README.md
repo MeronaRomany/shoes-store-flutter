@@ -1,16 +1,67 @@
-# shoes
+# Shoes Store App (E-Commerce)
 
-A new Flutter project.
+A cross-platform Flutter e-commerce app for shoes. Products are loaded from a REST API, with Firebase authentication, a shopping cart, and a Light/Dark theme.
+
+## Screenshots
+
+| Onboarding | Home | Cart | Dark Mode |
+|------------|------|------|-----------|
+| ![Onboarding](docs/screenshots/onboarding.png) | ![Home](docs/screenshots/home.png) | ![Cart](docs/screenshots/cart.png) | ![Dark](docs/screenshots/dark.png) |
+
+## Features
+
+- Onboarding screens shown only on the first launch
+- Sign up and sign in with Firebase Authentication
+- Product listings fetched from a RESTful API
+- Browse by brand and "See All" products
+- Shopping cart
+- Responsive UI with Light and Dark themes (the selected theme is saved)
+
+## Tech Stack
+
+| Category | Tools |
+|----------|-------|
+| Framework | Flutter, Dart |
+| State Management | BLoC / Cubit, HydratedCubit |
+| Networking | Dio, REST API |
+| Backend | Firebase Authentication, Cloud Firestore |
+| Local Storage | Shared Preferences (onboarding flag), HydratedBloc storage (theme) |
+| Version Control | Git, GitHub |
+
+## State Management
+
+The app uses separate Cubits for each concern:
+
+- `ProductsCubit`: loads products from the API
+- `CubitCartProduct`: manages the cart
+- `BrandsCubit`: manages brands on the home page
+- `SeeAllProduct`: controls the "See All" view
+- `ThemeCubit`: Light/Dark theme, persisted with HydratedCubit
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK installed ([installation guide](https://docs.flutter.dev/get-started/install))
+- A Firebase project (Android app registered)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Setup
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MeronaRomany/shoes-store-flutter.git
+   cd shoes-store-flutter
+   ```
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Add your Firebase configuration (`google-services.json`).
+4. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## Author
+
+**Merona Romany Khalil** | [LinkedIn](https://linkedin.com/in/merona-romany-khalil-62b191362) | [GitHub](https://github.com/MeronaRomany)
